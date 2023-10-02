@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frist Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+</head>
+<body>
+    
+    <!-- <div class="owl-carousel">
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+      </div> -->
+
+
+      <div class="owl-carousel owl-theme" id="mainslider">
+
+        <div class="item" data-hash="one"><img src="img/sliderimg1.jpeg" alt=""></div>
+        <div class="item"><img src="img/sliderimg2.jpeg" alt=""></div>
+
+
+        <div class="item" data-hash="two"><img src="img/sliderimg3.jpeg" alt=""></div>
+    
+
+        <div class="item" data-hash="three"><img src="img/sliderimg2.jpeg" alt=""></div>
+        
+
+        <div class="item"><img src="img/sliderimg1.jpeg" alt=""></div>
+        <div class="item"data-hash="four"><img src="img/sliderimg2.jpeg" alt=""></div>    
+
+        
+        <div class="item" data-hash="five"><img src="img/sliderimg3.jpeg" alt=""></div>
+        
+         
+       </div>
+
+
+
+       <div class="team">
+        <h1  class=" wow animate__flipInX"2>Our spacial team</h1>
+       </div>
+
+
+
+
+            <div class="contener">
+       
+
+         
+                <div class="owl-carousel owl-theme" id="profile">
+            
+                    <div class="box">
+                    
+                               <img src="img/profile.png" alt="" class="imgbox">
+                       
+                       <h2  class="wow animate__heartBeat" data-wow-duration="1s"  data-wow-delay="1s">Pinki </h2>
+                       
+                                <p class="wow animate__bounceInDown" data-wow-duration="1s"  data-wow-delay="1s">Lorem ipsum dolor sit amet
+                                     consectetur adipisicing elit.
+                                    Harum reiciendis iste repellendus at illo                                   
+                                   natus quas totam accusantium voluptate tempora!
+                                </p>
+                 </div>
+
+
+
+                 <div class="box">
+                    
+                               <img src="img/profile2.png" alt="" class="imgbox">
+                       
+                       <h2  class="wow animate__heartBeat" data-wow-duration="1s"  data-wow-delay="1.5s">bhuro</h2>
+                       
+                                <p class="wow animate__bounceInDown" data-wow-duration="1s"  data-wow-delay="1.5s">Lorem ipsum dolor sit amet
+                                     consectetur adipisicing elit.
+                                    Harum reiciendis iste repellendus at illo                                   
+                                   natus quas totam accusantium voluptate tempora!
+                                </p>
+                 </div>
+                 
+                 
+                 
+                 <div class="box">
+                    
+                    <img src="img/profile3.png" alt="" class="imgbox">
+            
+                   <h2  class="wow animate__heartBeat" data-wow-duration="1s"  data-wow-delay="2s">champa </h2>
+            
+                     <p class="wow animate__bounceInDown" data-wow-duration="1s"  data-wow-delay="2s">Lorem ipsum dolor sit amet
+                          consectetur adipisicing elit.
+                         Harum reiciendis iste repellendus at illo                                   
+                        natus quas totam accusantium voluptate tempora!
+                     </p>
+                  </div>
+      
+      
+      
+      <div class="box">
+                    
+        <img src="img/profile4.png" alt="" class="imgbox">
+
+              <h2  class="wow animate__heartBeat" data-wow-duration="1s"  data-wow-delay="2.5s">kalu </h2>
+
+             <p class="wow animate__bounceInDown" data-wow-duration="1s"  data-wow-delay="2.5s">Lorem ipsum dolor sit amet
+              consectetur adipisicing elit.
+             Harum reiciendis iste repellendus at illo                                   
+            natus quas totam accusantium voluptate tempora!
+         </p>
+         </div>
+                
+   
+   
+        
+
+         </div>
+        </div>
+ 
+         
+
+      
+
+
+
+
+
+
+
+
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+   <script src="js/wow.min.js"></script>
+
+
+
+   <script type="text/javascript">
+    
+    
+    </script>
+
+    <script>
+        var owl = $('#profile');
+    
+    
+    owl.owlCarousel({
+        items:3,
+        loop:true,
+        margin:10,
+        center:true,
+        //dotsEach:true,
+       
+      
+    
+        //nav:true,   
+        autoplay:true,
+        autoplayTimeout:2000,
+        // autoplaySpeed:500,
+        // rewind:true,
+
+		 	smartSpeed: 1000,
+
+    
+        // autoplayHoverPause:true
+    });
+
+
+    $('.play').on('click',function(){
+        owl.trigger('play.owl.autoplay',[1000])
+    })
+    $('.stop').on('click',function(){
+        owl.trigger('stop.owl.autoplay')
+    })
+    </script>
+
+
+
+<script>
+    var owl = $('#mainslider');
+
+
+owl.owlCarousel({
+    items:1,
+    // loop:true,
+    margin:10,
+    //dotsEach:true,
+    animateIn:'animate__jackInTheBox',
+    animateOut:'animate__flipOutX',
+
+    //nav:true,   
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplaySpeed:500,
+    rewind:true,
+
+    // autoplayHoverPause:true
+});
+new WOW().init();
+
+
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+
+
+</script>
+
+
+
+</body>
+</html>

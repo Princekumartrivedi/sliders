@@ -1,0 +1,122 @@
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/roboto-v30-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v30-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto-v30-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/roboto-v30-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+  }
+  /* open-sans-300 - latin */
+@font-face
+ {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/open-sans-v34-latin-300.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/open-sans-v34-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/open-sans-v34-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v34-latin-300.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v34-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/open-sans-v34-latin-300.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body
+{
+  background-color: whitesmoke;
+}
+.contener
+{
+  margin: auto;
+  margin-top: 80px;
+  /* overflow: visible; */
+  width: 1140px;
+  gap: 10px;
+  /* background-color: red; */
+  height: 1180px;
+}
+.box
+{
+  /* width: 380px; */
+  margin-top: 80px;
+  padding: 30px;
+  margin: 50px;
+  box-shadow: 0 10px 10px black;
+  /* overflow: hidden; */
+  /* background-color: blue; */
+  /* height: 280px; */
+  /* max-width: auto; */
+  /* position: relative; */
+  /* overflow: hidden; */
+  background-image: linear-gradient(45deg,gray,gray,gray,white,white,white,white,white,white,white,white,white,grey,grey,black);
+ 
+  transition: 2s;
+  
+  text-align: center;
+  border-radius: 80px 0px 80px 0px;
+
+  
+}
+
+.box.imgbox
+
+p
+{
+  line-height: 18px;
+  /* width: 350px; */
+}
+.imgbox 
+{
+  margin: auto;  
+  width: 100px!important;
+  height: 100px;
+  object-fit: cover;
+ margin-top: -80px;
+  /* object-fit: cover; */
+  /* background-size: cover; */
+  /* position: absolute; */
+  
+  
+}
+
+h2
+{
+  text-transform: uppercase;
+  margin: 10px auto;
+}
+.team
+{
+  margin-top: 50px;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: cursive;
+  text-decoration: underline;
+  /* margin: auto; */
+}
+#profile .owl-item
+{
+  transform: scale(0.8);
+  transition: 2s;
+  opacity: 0.5;
+  /* transform: rotateX(145deg); */
+}
+#profile .owl-item.center
+{
+  transform: scale(1);
+  opacity: 1;
+}
+#profile .owl-item.center .box
+{
+  box-shadow: 0px 0px 20px red;
+  background-image: linear-gradient(45deg,blue,blue,white,white,white,white,white,white,white,blue,blue)
+}
